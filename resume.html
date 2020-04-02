@@ -1,312 +1,7 @@
 <html>
 <head>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Roboto:300,400,500,700&display=swap" rel="stylesheet">
-  <style type="text/css">
-    * {
-      margin: 0;
-      padding: 0;
-      border: 0;
-      font-size: 100%;
-      font: inherit;
-      vertical-align: baseline;
-    }
-
-    a {
-      text-decoration: none;
-      color: darkcyan;
-    }
-
-    strong {
-      font-weight: bold;
-    }
-
-    html {
-      -webkit-print-color-adjust: exact;
-    }
-
-    /* HTML5 display-role reset for older browsers */
-    article,
-    aside,
-    details,
-    figcaption,
-    figure,
-    footer,
-    header,
-    hgroup,
-    menu,
-    nav,
-    section {
-      display: block;
-    }
-
-    ol,
-    ul {
-      list-style: none;
-    }
-
-    /* Globals */
-    .a4-container {
-      width: 2480px;
-      min-height: 3508px;
-      background: #FFFFFF;
-      position: relative;
-      height: 3508px;
-      line-height: 1;
-    }
-
-    .grid-full {
-      width: 100%;
-      height: auto;
-      float: left;
-      position: relative;
-    }
-
-    .grid-content {
-      width: 100%;
-      height: auto;
-      float: left;
-    }
-
-    .txt-left {
-      text-align: left;
-    }
-
-    .txt-right {
-      text-align: right;
-    }
-
-    .txt-center {
-      text-align: center;
-    }
-
-    .bold {
-      font-weight: bold;
-    }
-
-    .regular {
-      font-weight: normal;
-    }
-
-    .italic {
-      font-style: italic;
-    }
-
-    /* Advanced */
-    .color1-adv {
-      background-color: #c2d6b4 !important;
-    }
-
-    .color2-adv {
-      background-color: #91caf5 !important;
-    }
-
-    .color3-adv {
-      background-color: #93b0f5 !important;
-    }
-
-    .color4-adv {
-      background-color: #c18081 !important;
-    }
-
-    .color5-adv {
-      background-color: #f5a477 !important;
-    }
-
-    .header-adv-escape {
-      position: relative;
-      width: 2360px;
-      height: auto;
-      padding: 60px 60px 60px 60px;
-      min-height: 100px;
-      float: left;
-      margin-bottom: 0px;
-      text-align: left;
-    }
-
-    .header-adv-text {
-      width: 100%;
-      height: auto;
-      margin: 0px auto 0px auto;
-      padding: 30px;
-    }
-
-    .header-adv-escape h1 {
-      font-family: 'Roboto', Helvetica, sans-serif;
-      color: #000;
-      font-size: 132px;
-      padding-bottom: 40px;
-      letter-spacing: 3.3px;
-    }
-
-    .header-adv-escape h4 {
-      font-family: 'Open Sans', Helvetica, sans-serif;
-      color: #000;
-      font-size: 54px;
-      padding-bottom: 0px;
-      letter-spacing: 1.35px;
-    }
-
-    .contact-adv {
-      width: 2240px;
-      height: auto;
-      background: #f5f6f5;
-      padding: 20px 120px 20px 120px;
-      float: left;
-    }
-
-    .contact-adv ul li {
-      width: auto;
-      height: 72px;
-      float: left;
-      margin: 0 40px 10px 0px;
-    }
-
-    .adv-icon {
-      width: 72px;
-      height: 72px;
-      float: left;
-      margin: 0 30px 0px 0px;
-    }
-
-    .contact-adv ul li p {
-      width: auto;
-      height: auto;
-      min-height: 72px;
-      font-size: 42px;
-      line-height: 72.45px;
-      /*line-height: 1.725em;*/
-      float: left;
-      font-family: 'Open Sans', Helvetica, sans-serif;
-      word-break: break-word;
-    }
-
-    .adv-content {
-      width: 100%;
-      height: auto;
-      float: left;
-      width: 2240px;
-      padding: 120px 120px 60px 120px;
-    }
-
-    .adv-title {
-      font-family: 'Roboto', Helvetica, sans-serif;
-      text-transform: uppercase;
-      font-weight: bold;
-      font-size: 54px;
-      width: 100%;
-      height: auto;
-      float: left;
-      position: relative;
-      letter-spacing: 6.75px;
-      margin-bottom: 30px;
-      padding-bottom: 30px;
-    }
-
-    .adv-title-element {
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      background-color: #e0e0e0;
-      height: 8px;
-      width: 140px;
-    }
-
-    .adv-sub-title {
-      font-family: 'Open Sans', Helvetica, sans-serif;
-      text-transform: uppercase;
-      font-weight: bold;
-      font-size: 42px;
-      width: 100%;
-      height: auto;
-      float: left;
-      margin-bottom: 15px;
-      position: relative;
-      letter-spacing: 2.1px;
-    }
-
-    .adv-altsub-title {
-      font-family: 'Open Sans', Helvetica, sans-serif;
-      font-weight: normal;
-      font-size: 42px;
-      width: 100%;
-      height: auto;
-      float: left;
-      margin-bottom: 30px;
-      position: relative;
-      font-style: italic;
-    }
-
-    .adv-para {
-      font-family: 'open_sansregular', Helvetica, sans-serif;
-      font-size: 42px;
-      width: 100%;
-      height: auto;
-      float: left;
-      margin-bottom: 60px;
-      position: relative;
-      line-height: 52.5px;
-    }
-    .adv-techs {
-      list-style-type: circle !important;
-    }
-
-    .adv-para ul {
-      list-style-type: disc;
-      padding-left: 90px;
-    }
-
-    .adv-para ul li {
-      padding-left: 25px;
-      line-height: 63px;
-    }
-
-    .adv-skills {
-      width: 100%;
-      height: auto;
-      float: left;
-      margin-bottom: 60px;
-    }
-
-    .adv-skills ul li {
-      width: auto;
-      height: auto;
-      padding: 20px;
-      background: #e0e0e0;
-      float: left;
-      font-family: 'open_sansregular', Helvetica, sans-serif;
-      font-size: 42px;
-      margin: 0px 30px 30px 0px;
-    }
-
-    .adv-education {
-      /* width: 50%; */
-      height: auto;
-      float: left;
-    }
-
-    .adv-education .adv-altsub-title {
-      font-family: 'open_sansregular', Helvetica, sans-serif;
-      font-size: 42px;
-      width: 100%;
-      height: auto;
-      float: left;
-      margin-bottom: 10px;
-      position: relative;
-      font-style: italic;
-    }
-
-    @media screen {
-      .a4-container {
-        width: 2480px;
-        min-height: 3508px;
-        background: #FFFFFF;
-        position: relative;
-        overflow: hidden;
-        column-width: 2480px;
-        height: 3508px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href='style.css' />
 </head>
 
 <body>
@@ -314,7 +9,7 @@
     <div class="header-adv-escape">
       <div class="header-adv-text">
         <h1>Vahid Alavi</h1>
-        <h4>Frontend Developer</h4>
+        <h4>Software Developer</h4>
       </div>
     </div>
     <div class="contact-adv">
@@ -359,7 +54,7 @@
         </div>
         <div class="adv-education">
           <div class="adv-sub-title"> <span>Amirkabir University of Technology</span> </div>
-          <div class="adv-altsub-title">B.A. Applied Mathematical Sciences Candidate (Expected graduation Jan 2020)</div>
+          <div class="adv-altsub-title">B.A. Applied Mathematical Sciences</div>
           <div class="adv-altsub-title bold"> <span>Relevant Courses</span> </div>
           <div class="adv-para">
             <ul>
@@ -380,11 +75,34 @@
         <div class="adv-title"> Professional Experience <div class="adv-title-element"></div>
         </div>
         <div>
-          <div class="adv-sub-title"> Frontend Developer </div>
-          <div class="adv-altsub-title"><a href='https://polygon.team' target='_blank'>Noxel Tech (Polygon Team)</a><span> | Jul 2018 – Present </span> </div>
+          <div class="adv-sub-title"> Tech Lead </div>
+          <div class="adv-altsub-title"><a href='https://appetizevm.com' target='_blank'>Appetize Virtual Menu inc.</a><span> | Jul 2019 – Present </span> </div>
           <div class="adv-para">
             <ul>
-              <li>Develop <strong><a href='https://gerefti.com' target='_blank'>Gerefti.com</a> Website + Mobile App</strong> and <strong><a href='https://frikadell.ir' target='_blank'>Frikadell Order Web PWA</a></strong>(In Progress) with new user-facing features</li>
+              <li>Develop <strong><a href='https://appetizevm.com' target='_blank'>Appetizevm.com</a></strong> Website, Mobile App, Merchants Dashboard and Back Office</li>
+              <li>Senior technical team member</li>
+              <li>Eliminating technical blockers</li>
+              <li>Setting and evolving tech strategy</li>
+              <li>Working with product owners and project managers to define and deliver the product vision as well as empowering, growing and onboarding their team members</li>
+              <li>Writing code alongside the team</li>
+              <li>
+                <strong>Technologies and Tools:</strong>
+                <ul class='adv-techs'>
+                  <li>React and React-Native</li>
+                  <li>Django and DRF</li>
+                  <li>Nginx</li>
+                  <li>Docker</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class="adv-sub-title"> Frontend Developer </div>
+          <div class="adv-altsub-title"><a href='https://polygon.team' target='_blank'>Noxel Tech (Polygon Team)</a><span> | Jul 2018 – Sep 2019 </span> </div>
+          <div class="adv-para">
+            <ul>
+              <li>Develop <strong><a href='https://gerefti.com' target='_blank'>Gerefti.com</a> Website + Mobile App</strong> and <strong><a href='https://frikadell.ir' target='_blank'>Frikadell</a></strong> Ordering PWA</li>
               <li>Build reusable code and libraries for future use</li>
               <li>Ensure the technical feasibility of UI/UX designs</li>
               <li>Optimize application for maximum speed and scalability</li>
@@ -394,6 +112,21 @@
                 <ul class='adv-techs'>
                   <li>React and React-Native</li>
                   <li>Next.js (Server-Side Rendering)</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class="adv-sub-title"> Frontend Developer </div>
+          <div class="adv-altsub-title"><a href='https://iapps.ir' target='_blank'>iApps</a><span> | Jul 2019 – Oct 2019 </span> </div>
+          <div class="adv-para">
+            <ul>
+              <li>Develop <strong><a href='https://iapps.ir' target='_blank'>iApps.ir</a></strong> Website and PWA</li>
+              <li>
+                <strong>Technologies and Tools:</strong>
+                <ul class='adv-techs'>
+                  <li>React</li>
                 </ul>
               </li>
             </ul>
