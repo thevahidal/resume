@@ -1,0 +1,436 @@
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Roboto:300,400,500,700&display=swap" rel="stylesheet">
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+    }
+
+    a {
+      text-decoration: none;
+      color: darkcyan;
+    }
+
+    strong {
+      font-weight: bold;
+    }
+
+    html {
+      -webkit-print-color-adjust: exact;
+    }
+
+    /* HTML5 display-role reset for older browsers */
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    section {
+      display: block;
+    }
+
+    ol,
+    ul {
+      list-style: none;
+    }
+
+    /* Globals */
+    .a4-container {
+      width: 2480px;
+      min-height: 3508px;
+      background: #FFFFFF;
+      position: relative;
+      height: 3508px;
+      line-height: 1;
+    }
+
+    .grid-full {
+      width: 100%;
+      height: auto;
+      float: left;
+      position: relative;
+    }
+
+    .grid-content {
+      width: 100%;
+      height: auto;
+      float: left;
+    }
+
+    .txt-left {
+      text-align: left;
+    }
+
+    .txt-right {
+      text-align: right;
+    }
+
+    .txt-center {
+      text-align: center;
+    }
+
+    .bold {
+      font-weight: bold;
+    }
+
+    .regular {
+      font-weight: normal;
+    }
+
+    .italic {
+      font-style: italic;
+    }
+
+    /* Advanced */
+    .color1-adv {
+      background-color: #c2d6b4 !important;
+    }
+
+    .color2-adv {
+      background-color: #91caf5 !important;
+    }
+
+    .color3-adv {
+      background-color: #93b0f5 !important;
+    }
+
+    .color4-adv {
+      background-color: #c18081 !important;
+    }
+
+    .color5-adv {
+      background-color: #f5a477 !important;
+    }
+
+    .header-adv-escape {
+      position: relative;
+      width: 2360px;
+      height: auto;
+      padding: 60px 60px 60px 60px;
+      min-height: 100px;
+      float: left;
+      margin-bottom: 0px;
+      text-align: left;
+    }
+
+    .header-adv-text {
+      width: 100%;
+      height: auto;
+      margin: 0px auto 0px auto;
+      padding: 30px;
+    }
+
+    .header-adv-escape h1 {
+      font-family: 'Roboto', Helvetica, sans-serif;
+      color: #000;
+      font-size: 132px;
+      padding-bottom: 40px;
+      letter-spacing: 3.3px;
+    }
+
+    .header-adv-escape h4 {
+      font-family: 'Open Sans', Helvetica, sans-serif;
+      color: #000;
+      font-size: 54px;
+      padding-bottom: 0px;
+      letter-spacing: 1.35px;
+    }
+
+    .contact-adv {
+      width: 2240px;
+      height: auto;
+      background: #f5f6f5;
+      padding: 20px 120px 20px 120px;
+      float: left;
+    }
+
+    .contact-adv ul li {
+      width: auto;
+      height: 72px;
+      float: left;
+      margin: 0 40px 10px 0px;
+    }
+
+    .adv-icon {
+      width: 72px;
+      height: 72px;
+      float: left;
+      margin: 0 30px 0px 0px;
+    }
+
+    .contact-adv ul li p {
+      width: auto;
+      height: auto;
+      min-height: 72px;
+      font-size: 42px;
+      line-height: 72.45px;
+      /*line-height: 1.725em;*/
+      float: left;
+      font-family: 'Open Sans', Helvetica, sans-serif;
+      word-break: break-word;
+    }
+
+    .adv-content {
+      width: 100%;
+      height: auto;
+      float: left;
+      width: 2240px;
+      padding: 120px 120px 60px 120px;
+    }
+
+    .adv-title {
+      font-family: 'Roboto', Helvetica, sans-serif;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 54px;
+      width: 100%;
+      height: auto;
+      float: left;
+      position: relative;
+      letter-spacing: 6.75px;
+      margin-bottom: 30px;
+      padding-bottom: 30px;
+    }
+
+    .adv-title-element {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      background-color: #e0e0e0;
+      height: 8px;
+      width: 140px;
+    }
+
+    .adv-sub-title {
+      font-family: 'Open Sans', Helvetica, sans-serif;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 42px;
+      width: 100%;
+      height: auto;
+      float: left;
+      margin-bottom: 15px;
+      position: relative;
+      letter-spacing: 2.1px;
+    }
+
+    .adv-altsub-title {
+      font-family: 'Open Sans', Helvetica, sans-serif;
+      font-weight: normal;
+      font-size: 42px;
+      width: 100%;
+      height: auto;
+      float: left;
+      margin-bottom: 30px;
+      position: relative;
+      font-style: italic;
+    }
+
+    .adv-para {
+      font-family: 'open_sansregular', Helvetica, sans-serif;
+      font-size: 42px;
+      width: 100%;
+      height: auto;
+      float: left;
+      margin-bottom: 60px;
+      position: relative;
+      line-height: 52.5px;
+    }
+    .adv-techs {
+      list-style-type: circle !important;
+    }
+
+    .adv-para ul {
+      list-style-type: disc;
+      padding-left: 90px;
+    }
+
+    .adv-para ul li {
+      padding-left: 25px;
+      line-height: 63px;
+    }
+
+    .adv-skills {
+      width: 100%;
+      height: auto;
+      float: left;
+      margin-bottom: 60px;
+    }
+
+    .adv-skills ul li {
+      width: auto;
+      height: auto;
+      padding: 20px;
+      background: #e0e0e0;
+      float: left;
+      font-family: 'open_sansregular', Helvetica, sans-serif;
+      font-size: 42px;
+      margin: 0px 30px 30px 0px;
+    }
+
+    .adv-education {
+      /* width: 50%; */
+      height: auto;
+      float: left;
+    }
+
+    .adv-education .adv-altsub-title {
+      font-family: 'open_sansregular', Helvetica, sans-serif;
+      font-size: 42px;
+      width: 100%;
+      height: auto;
+      float: left;
+      margin-bottom: 10px;
+      position: relative;
+      font-style: italic;
+    }
+
+    @media screen {
+      .a4-container {
+        width: 2480px;
+        min-height: 3508px;
+        background: #FFFFFF;
+        position: relative;
+        overflow: hidden;
+        column-width: 2480px;
+        height: 3508px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="a4-container">
+    <div class="header-adv-escape">
+      <div class="header-adv-text">
+        <h1>Vahid Alavi</h1>
+        <h4>Frontend Developer</h4>
+      </div>
+    </div>
+    <div class="contact-adv">
+      <ul>
+        <li>
+          <div class="adv-icon">
+            <img
+              src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIzLjAuMiwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAyNCAyNCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjQgMjQ7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDojRTBFMEUwO30KCS5zdDF7ZmlsbDpub25lO30KPC9zdHlsZT4KPHBhdGggY2xhc3M9InN0MCIgZD0iTTEyLDI0TDEyLDI0QzUuNCwyNCwwLDE4LjYsMCwxMnYwQzAsNS40LDUuNCwwLDEyLDBoMGM2LjYsMCwxMiw1LjQsMTIsMTJ2MEMyNCwxOC42LDE4LjYsMjQsMTIsMjR6Ii8+CjxwYXRoIGQ9Ik0xOCw2SDZDNS4yLDYsNC41LDYuNyw0LjUsNy41bDAsOUM0LjUsMTcuMyw1LjIsMTgsNiwxOGgxMmMwLjgsMCwxLjUtMC43LDEuNS0xLjV2LTlDMTkuNSw2LjcsMTguOCw2LDE4LDZ6IE0xOCw5bC02LDMuOAoJTDYsOVY3LjVsNiwzLjhsNi0zLjhWOXoiLz4KPHBhdGggY2xhc3M9InN0MSIgZD0iTTAsMGgyNHYyNEgwVjB6Ii8+Cjwvc3ZnPgo=">
+          </div>
+          <p><a href='mailto:vahid.alavifard@gmail.com'>vahid.alavifard@gmail.com</a></p>
+        </li>
+        <li>
+          <div class="adv-icon">
+            <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIzLjAuMiwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAyNCAyNCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjQgMjQ7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDojRTBFMEUwO30KCS5zdDF7ZmlsbDpub25lO30KPC9zdHlsZT4KPHBhdGggY2xhc3M9InN0MCIgZD0iTTEyLDI0TDEyLDI0QzUuNCwyNCwwLDE4LjYsMCwxMnYwQzAsNS40LDUuNCwwLDEyLDBoMGM2LjYsMCwxMiw1LjQsMTIsMTJ2MEMyNCwxOC42LDE4LjYsMjQsMTIsMjR6Ii8+CjxwYXRoIGNsYXNzPSJzdDEiIGQ9Ik0wLDBoMjR2MjRIMFYweiIvPgo8cGF0aCBkPSJNOC40LDExLjJjMSwxLjksMi41LDMuNCw0LjQsNC40bDEuNS0xLjVjMC4yLTAuMiwwLjQtMC4yLDAuNy0wLjJjMC43LDAuMiwxLjYsMC40LDIuNCwwLjRjMC40LDAsMC43LDAuMywwLjcsMC43djIuMwoJYzAsMC40LTAuMywwLjctMC43LDAuN0MxMS4xLDE4LDYsMTIuOSw2LDYuN0M2LDYuMyw2LjMsNiw2LjcsNkg5YzAuNCwwLDAuNywwLjMsMC43LDAuN0M5LjcsNy41LDkuOCw4LjMsMTAsOQoJYzAuMSwwLjIsMCwwLjUtMC4yLDAuN0w4LjQsMTEuMnoiLz4KPC9zdmc+Cg==">
+          </div>
+          <p>(933) 533-1193</p>
+        </li>
+        <!-- <li>
+          <div class="adv-icon"> <img
+              src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIzLjAuMiwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAyNCAyNCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjQgMjQ7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDojRTBFMEUwO30KCS5zdDF7ZmlsbDpub25lO30KPC9zdHlsZT4KPHBhdGggY2xhc3M9InN0MCIgZD0iTTEyLDI0TDEyLDI0QzUuNCwyNCwwLDE4LjYsMCwxMnYwQzAsNS40LDUuNCwwLDEyLDBoMGM2LjYsMCwxMiw1LjQsMTIsMTJ2MEMyNCwxOC42LDE4LjYsMjQsMTIsMjR6Ii8+CjxwYXRoIGQ9Ik0xMiw2Yy0yLjMsMC00LjIsMS45LTQuMiw0LjJDNy44LDEzLjQsMTIsMTgsMTIsMThzNC4yLTQuNiw0LjItNy44QzE2LjIsNy45LDE0LjMsNiwxMiw2eiBNMTIsMTEuN2MtMC44LDAtMS41LTAuNy0xLjUtMS41CglzMC43LTEuNSwxLjUtMS41czEuNSwwLjcsMS41LDEuNVMxMi44LDExLjcsMTIsMTEuN3oiLz4KPHBhdGggY2xhc3M9InN0MSIgZD0iTTAsMGgyNHYyNEgwVjB6Ii8+Cjwvc3ZnPgo=">
+          </div>
+          <p>
+            <span>Ghazvin St</span>
+            <span></span>
+            <span>Tehran, Tehran, 123456</span>
+          </p>
+        </li> -->
+      </ul>
+    </div>
+    <div class="adv-content">
+      <!-- <div class="grid-content">
+        <div class="adv-title">
+          Career Objective
+          <div class="adv-title-element"></div>
+        </div>
+        <div class="adv-para">Adaptable Applied Mathematical Sciences BA Student currently attending Amirkabir University of Technology, with 1 year of work experience. Aiming to leverage a proven knowledge of web platform development, programming,
+          and search engine optimization skills to successfully fill the Frontend Developer role at your company. Frequently praised as quality-oriented by my peers, I can be relied upon to help your company achieve its goals.
+        </div>
+      </div> -->
+      <div class="grid-content">
+        <div class="adv-title"> Education <div class="adv-title-element"></div>
+        </div>
+        <div class="adv-education">
+          <div class="adv-sub-title"> <span>Amirkabir University of Technology</span> </div>
+          <div class="adv-altsub-title">B.A. Applied Mathematical Sciences Candidate (Expected graduation Jan 2020)</div>
+          <div class="adv-altsub-title bold"> <span>Relevant Courses</span> </div>
+          <div class="adv-para">
+            <ul>
+              <li class="">Data Structure</li>
+              <li class="">Advanced Programming</li>
+              <li class="">Data mining</li>
+            </ul>
+          </div>
+          <div class="adv-altsub-title bold"> <span>Extracurricular Activity</span> </div>
+          <div class="adv-para">
+            <ul>
+              <li class="">TEDxAUT Graphic Designer</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="grid-content">
+        <div class="adv-title"> Professional Experience <div class="adv-title-element"></div>
+        </div>
+        <div>
+          <div class="adv-sub-title"> Frontend Developer </div>
+          <div class="adv-altsub-title"><a href='https://polygon.team' target='_blank'>Noxel Tech (Polygon Team)</a><span> | Jul 2018 – Present </span> </div>
+          <div class="adv-para">
+            <ul>
+              <li>Develop <strong><a href='https://gerefti.com' target='_blank'>Gerefti.com</a> Website + Mobile App</strong> and <strong><a href='https://frikadell.ir' target='_blank'>Frikadell Order Web PWA</a></strong>(In Progress) with new user-facing features</li>
+              <li>Build reusable code and libraries for future use</li>
+              <li>Ensure the technical feasibility of UI/UX designs</li>
+              <li>Optimize application for maximum speed and scalability</li>
+              <li>Write functional requirement documents and guides</li>
+              <li>
+                <strong>Technologies and Tools:</strong>
+                <ul class='adv-techs'>
+                  <li>React and React-Native</li>
+                  <li>Next.js (Server-Side Rendering)</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class="adv-sub-title"> UI/UX Designer </div>
+          <div class="adv-altsub-title"><a href='https://wishwork.org' target='_blank'>WishWork</a><span> | Aug 2017 – May 2018 </span> </div>
+          <div class="adv-para">
+            <ul>
+              <li>Gathering and evaluating user requirements, in collaboration with product managers and engineers</li>
+              <li>Illustrating design ideas using storyboards, process flows and sitemaps</li>
+              <li>Designing graphic user interface elements</li>
+              <li>
+                <strong>Technologies and Tools:</strong>
+                <ul class='adv-techs'>
+                  <li>HTML, CSS and Javascript</li>
+                  <li>Photoshop</li>
+                  <li>Illstrator</li>
+                  <li>InVision</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="grid-content">
+        <div class="adv-title"> Additional Skills <div class="adv-title-element"></div>
+        </div>
+        <div class="adv-skills">
+          <ul>
+            <li class="">English - Business Level Speaking, Reading, &amp; Writing</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
