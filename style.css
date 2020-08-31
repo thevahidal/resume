@@ -16,6 +16,10 @@ strong {
   font-weight: bold;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 html {
   -webkit-print-color-adjust: exact;
 }
@@ -46,7 +50,6 @@ ul {
   min-height: 3508px;
   background: #FFFFFF;
   position: relative;
-  height: 3508px;
   line-height: 1;
 }
 
@@ -299,6 +302,5 @@ ul {
     position: relative;
     overflow: hidden;
     column-width: 2480px;
-    height: 3508px;
   }
 }
